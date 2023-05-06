@@ -1,0 +1,64 @@
+img {
+    border-radius: 50%;
+    max-width: 100%;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    line-height: 1.3em;
+    margin-bottom: 1rem;
+  }
+  
+  .row {
+    padding: 2%;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .about-as {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .data1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #5f00a3;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+  }
+  
+  .data2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #FC7A00;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+  }
+  
+  @media (max-width: 575px) {
+    img {
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      border-radius: 50%;
+    }
+  }
+
+  .container-fluid {
+    width: 100vw;
+    overflow: hidden;
+    border-radius:  0px 0px 100px 100px;
+    background-color: transparent;
+    overflow: hidden;
+  }
+
+  span p{
+    color: white;
+  }

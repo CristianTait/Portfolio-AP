@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="container">
+<h2 style="padding-top: 150px;">Editar Experiencia</h2>
+<form (submit)="onSubmit()" class="mt-4">
+  <div class="form-group">
+    <label for="tituloE">Titulo:</label>
+    <textarea name="tituloE" [(ngModel)]="experiencias.tituloE" required class="form-control"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="fechaE">Fecha:</label>
+    <input type="date" name="fechaE" [(ngModel)]="experiencias.fechaE" required class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="nombreE">Cargo:</label>
+    <input type="text" name="nombreE" [(ngModel)]="experiencias.nombreE" required class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="descripcionE">Descripcion:</label>
+    <textarea  name="descripcionE" [(ngModel)]="experiencias.descripcionE" required class="form-control"></textarea>
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+    <button (click)="cancelar()" class="btn btn-secondary">Cancelar</button>
+  </div>
+</form>
+</div>
+<app-footer></app-footer>

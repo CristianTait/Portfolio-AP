@@ -1,0 +1,23 @@
+<div class="row">
+    <h1 class="text-center">Experiencia Laboral</h1>
+    <div *ngFor="let experiencia of experiencias" class="col-12 col-md-6 col-lg-4 text-center">
+      <div class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title">{{ experiencia.tituloE}}</h5>
+          <p class="card-text">{{ experiencia.fechaE }}</p>
+          <p class="card-text">{{ experiencia.nombreE }}</p>
+          <p class="card-text">{{ experiencia.descripcionE }}</p>
+        </div>
+      </div>
+      <div *ngIf="estaLogueado()" class="button-group">
+        <button (click)="editarExperiencia(experiencia.id)" class="btn btn-primary me-3">
+          <i class="far fa-edit"></i>
+          Editar
+        </button>
+        <button (click)="eliminarExperiencia(experiencia.id)" class="btn btn-danger">
+          <i class="far fa-trash-alt"></i>
+          Eliminar
+        </button>
+    </div>
+    </div>
+  </div>

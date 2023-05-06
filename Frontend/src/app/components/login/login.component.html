@@ -1,0 +1,28 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <div class="row justify-content-center align-items-center" style="height: 90.7vh;">
+      <div class="col-lg-4 col-md-6 col-sm-8">
+        <div class="card">
+          <div class="card-body">
+            <form (ngSubmit)="login()">
+              <div class="form-group">
+                <label for="loginName">Username</label>
+                <input type="text" id="loginName" class="form-control" [(ngModel)]="nombreUsuario" name="nombreUsuario" />
+              </div>
+              <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" class="form-control" [(ngModel)]="password" name="password" />
+              </div>
+              <button type="submit" class="btn btn-primary btn-block mt-4">Conectar</button>
+            </form>
+            <div class="credentials">
+                <p class="credentials-label">Credenciales de acceso:</p>
+                <p class="credentials-info">Usuario: admin</p>
+                <p class="credentials-info">Contraseña: contraseña</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>

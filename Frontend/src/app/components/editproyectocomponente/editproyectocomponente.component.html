@@ -1,0 +1,33 @@
+<app-header></app-header>
+<h2 style="padding-top: 150px;">Editar Proyecto</h2>
+<form (submit)="onSubmit()" class="mt-4">
+  <div class="form-group">
+    <label for="tituloProy">Título:</label>
+    <input type="text" name="tituloProy" [(ngModel)]="proyecto.tituloProy" required class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="descripProy">Descripción:</label>
+    <textarea name="descripProy" [(ngModel)]="proyecto.descripProy" required class="form-control"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="imagenProy">Imagen:</label>
+    <input type="text" name="imagenProy" [(ngModel)]="proyecto.imagenProy" required class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="tecnoProy">Tecnologías:</label>
+    <input type="text" name="tecnoProy" [(ngModel)]="proyecto.tecnoProy" required class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="fechaProy">Fecha:</label>
+    <input type="date" name="fechaProy" [(ngModel)]="proyecto.fechaProy" required class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="urlProy">URL:</label>
+    <input type="text" name="urlProy" [(ngModel)]="proyecto.urlProy" required class="form-control">
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+    <button (click)="cancelar()" class="btn btn-secondary">Cancelar</button>
+  </div>
+</form>
+<app-footer></app-footer>

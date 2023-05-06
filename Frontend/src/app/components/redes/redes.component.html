@@ -1,0 +1,6 @@
+<div *ngFor="let persona of personas">
+    <a href="{{ persona.linkedin }}" target="_blank"><img src="../../../assets/img/linkedin.png" alt=""></a>
+    <a href="{{ persona.github }}" target="_blank"><img src="../../../assets/img/github.png" alt=""></a>
+    <button *ngIf="!estaLogueado" class="btn btn-outline-light" type="button" routerLink="/login" >LOGIN</button>
+    <button *ngIf="estaLogueado" class="btn btn-outline-light" type="button" (click)="logout()">LOGOUT</button>
+</div>
