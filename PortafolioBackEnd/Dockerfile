@@ -1,6 +1,5 @@
-FROM amazoncorrectto:ll-alpine-jdk
-MAINTAINER CDT
-COPY target/https://cristiantait.com/jar/portfolio-back-0.0.1-SNAPSHOT.jar -O backend.jar
-ENTRYPOINT  ["java","-jar","backend.jar"]
-
-
+FROM openjdk:11-jre-slim
+RUN apt-get update && apt-get install -y curl
+ARG JAR_URL
+RUN curl ${https://cristiantait.com/jar/portfolio-back-0.0.1-SNAPSHOT.jar} -o app.jar
+ENTRYPOINT ["java","-jar","app.jar"]
