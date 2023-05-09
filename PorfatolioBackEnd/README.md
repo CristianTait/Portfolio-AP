@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="150" src="[https://cristiantait.com/imgAP/logo.png" alt="Descripción de la imagen">
+  <img width="150" src="https://cristiantait.com/imgAP/logo.png" alt="Portafolio Backend proyecto final Argentina Programa">
 </p>
 Portafolio Backend proyecto final Argentina Programa.
 
