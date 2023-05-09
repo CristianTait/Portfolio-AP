@@ -1,4 +1,4 @@
-![Cristian Tait - Portafolio Backend](https://cristiantait.com/imgAP/logo.png)
+![Cristian Tait - Portafolio Backend](https://cristiantait.com/imgAP/logo.png){width='250px'}
 
 Portafolio Backend proyecto final Argentina Programa.
 
