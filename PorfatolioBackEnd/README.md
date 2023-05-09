@@ -1,4 +1,4 @@
-![Cristian Tait - Portafolio Backend](https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png](https://cristiantait.com/imgAP/logo.png)
+![Cristian Tait - Portafolio Backend](https://cristiantait.com/imgAP/logo.png)
 
 Portafolio Backend proyecto final Argentina Programa.
 
