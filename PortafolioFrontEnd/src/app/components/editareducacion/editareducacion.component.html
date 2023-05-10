@@ -1,0 +1,25 @@
+<app-header></app-header>
+<h2 style="padding-top: 150px;">Editar Educacion</h2>
+<form (submit)="onSubmit()" class="mt-4">
+  <div class="form-group">
+    <label for="cursoEdu">Cursada:</label>
+    <textarea name="cursoEdu" [(ngModel)]="educacion.cursoEdu" required class="form-control" required maxlength="255"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="fechaEdu">Fecha egreso:</label>
+    <input type="date" name="fechaEdu" [(ngModel)]="educacion.fechaEdu" required class="form-control" required maxlength="255">
+  </div>
+  <div class="form-group">
+    <label for="instiEdu">Instituto:</label>
+    <input type="text" name="instiEdu" [(ngModel)]="educacion.instiEdu" required class="form-control" required maxlength="255">
+  </div>
+  <div class="form-group">
+    <label for="descrpEdu">Descripcion:</label>
+    <textarea  name="descrpEdu" [(ngModel)]="educacion.descrpEdu" required class="form-control" required maxlength="255"></textarea>
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+    <button (click)="cancelar()" class="btn btn-secondary">Cancelar</button>
+  </div>
+</form>
+<app-footer></app-footer>

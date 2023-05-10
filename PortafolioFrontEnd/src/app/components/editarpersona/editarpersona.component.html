@@ -1,0 +1,55 @@
+<app-header></app-header>
+<h2 style="padding-top: 150px;">Editar Persona</h2>
+<form (submit)="onSubmit()" class="mt-4">
+  <div class="form-group">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" [(ngModel)]="personas.nombre" required class="form-control" required maxlength="40">
+  </div>
+  <div class="form-group">
+    <label>Apellido:</label>
+    <input name="apellido" [(ngModel)]="personas.apellido" required class="form-control" required maxlength="40">
+  </div>
+  <div class="form-group">
+    <label>Descripción:</label>
+    <textarea type="text" name="descripcion" [(ngModel)]="personas.descripcion" required class="form-control" required maxlength="250"></textarea>
+  </div>
+  <div class="form-group">
+    <label>Imagen:</label>
+    <div class="input-group">
+      <input type="text" name="img" [(ngModel)]="personas.img" required class="form-control" required pattern="^https:\/\/.*\.(png|jpg|jpeg|gif)$">
+    </div>
+    <div class="img-perfil mt-2">
+      <img src="{{personas.img}}">
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Logo:</label>
+    <div class="input-group">
+      <input type="text" name="logo" [(ngModel)]="personas.logo" required class="form-control" required pattern="^https:\/\/.*\.(png|jpg|jpeg|gif)$">
+    </div>
+    <div class="img-perfil mt-2">
+      <img src="{{personas.logo}}">
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Ubicación:</label>
+    <input type="text" name="ubicacion" [(ngModel)]="personas.ubicacion" required class="form-control" required maxlength="255">
+  </div>
+  <div class="form-group">
+    <label>Correo Electrónico:</label>
+    <input type="text" name="mail" [(ngModel)]="personas.mail" required class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Linkedin:</label>
+    <input type="text" name="linkedin" [(ngModel)]="personas.linkedin" required class="form-control" required pattern="^https:\/\/linkedin.com\/.*$">
+  </div>
+  <div class="form-group">
+    <label>Github:</label>
+    <input type="text" name="github" [(ngModel)]="personas.github" required class="form-control" required pattern="^https:\/\/github.com\/.*$">
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+    <button (click)="cancelar()" class="btn btn-secondary">Cancelar</button>
+  </div>
+</form>
+<app-footer></app-footer>

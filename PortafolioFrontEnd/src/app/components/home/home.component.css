@@ -1,0 +1,17 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-container img {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:20px;
+    right:20px;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
