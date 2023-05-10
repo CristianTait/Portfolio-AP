@@ -1,9 +1,9 @@
 {
   "type": "service_account",
-  "project_id": "yoprogramoprogramo",
+  "project_id": "APIKEY",
   "private_key_id": "APIKEY",
   "private_key": "APIKEY",
-  "client_email": "firebase-adminsdk-94i9v@yoprogramoprogramo.iam.gserviceaccount.com",
+  "client_email": "APIKEY",
   "client_id": "APIKEY",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
