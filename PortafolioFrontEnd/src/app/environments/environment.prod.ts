@@ -17,13 +17,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyAKDMlznkO6dPu1yYO2ANjoRNrRohIoTOg",
+    apiKey: "crendialapike",
     authDomain: "yoprogramoprogramo.firebaseapp.com",
     databaseURL: "https://yoprogramoprogramo-default-rtdb.firebaseio.com",
     projectId: "yoprogramoprogramo",
     storageBucket: "yoprogramoprogramo.appspot.com",
-    messagingSenderId: "254368116986",
-    appId: "1:254368116986:web:0ed0ed80ba7c8e9dc15943"
+    messagingSenderId: "idMessaging",
+    appId: "idApp"
   },
 
   
