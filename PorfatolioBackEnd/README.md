@@ -38,3 +38,12 @@
   <li>En el campo "Arguments", agregue los argumentos necesarios para su configuración local</li>
   <li>Guarde los cambios</li>
 </ol>
+
+<h1>URL y JSON de los endpoints de la API REST</h1>
+<p>Para probar los endpoints de la API REST del proyecto de Spring Boot, se puede utilizar la herramienta Postman.
+Postman es una herramienta de pruebas de API REST que permite enviar solicitudes HTTP a un servidor web y analizar la respuesta.
+Para comenzar a utilizar Postman, es necesario tener instalada la aplicación en su equipo. La misma puede descargarse de manera gratuita desde la página oficial de Postman: https://www.postman.com/downloads/.
+Para importar las colecciones, se debe hacer clic en el botón "Import" de la interfaz de usuario de Postman y seleccionar el archivo JSON descargado.
+Este archivo contiene todas las solicitudes de ejemplo para cada uno de los endpoints de la API REST del proyecto de Spring Boot.</p>
+<p>Documentacion API Postman:</p>
+https://web.postman.co/workspace/My-Workspace~79c74c25-f349-4e7d-84ae-46b28c67fa2b/documentation/26172216-2e9bae69-d534-44d7-85e9-0a573e1471ea
