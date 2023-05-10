@@ -15,7 +15,7 @@
 <p>Para correr el proyecto, es necesario tener instalado Apache NetBeans y el plugin para Spring Boot. Una vez importado el proyecto en el IDE, se puede ejecutar con la opción "Run".</p>
 <p>En la carpeta también se encuentra un archivo README.md específico para el backend con información detallada sobre cómo clonar y ejecutar el proyecto.</p>
 <h2>Pruebas en Postman</h2>
-<p>Se pueden realizar pruebas a la API REST del proyecto con la herramienta Postman utilizando las colecciones de solicitudes disponibles en el siguiente enlace: https://www.getpostman.com/collections/4e4f465d1f04a4aad4e3.</p>
+<p>Se pueden realizar pruebas a la API REST del proyecto con la herramienta Postman utilizando las colecciones de solicitudes disponibles en el siguiente enlace: https://web.postman.co/workspace/My-Workspace~79c74c25-f349-4e7d-84ae-46b28c67fa2b/documentation/26172216-2e9bae69-d534-44d7-85e9-0a573e1471ea.</p>
 <p>El archivo JSON de las colecciones se puede importar en Postman para realizar pruebas a cada uno de los endpoints de la API REST.</p>
 <h2>Contribuciones</h2>
 <p>Se aceptan contribuciones al proyecto, tanto para el frontend como para el backend. Para hacer una contribución, por favor sigue los siguientes pasos:</p>
