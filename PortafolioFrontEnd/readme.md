@@ -1,4 +1,4 @@
-<h1>Documentación del Proyecto de Angular del Portafolio</h1>
+<h1>Documentación del Proyecto Portafolio Front End</h1>
 <p>El proyecto de Angular del Portafolio está diseñado para mostrar las habilidades y proyectos de un desarrollador. En este documento se describen los pasos necesarios para instalar las dependencias de Angular y montar el proyecto en un servidor local.</p>
 
 <h2>Instalación de Dependencias de Angular</h2>
