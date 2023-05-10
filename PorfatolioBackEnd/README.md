@@ -47,3 +47,30 @@ Para importar las colecciones, se debe hacer clic en el botón "Import" de la in
 Este archivo contiene todas las solicitudes de ejemplo para cada uno de los endpoints de la API REST del proyecto de Spring Boot.</p>
 <p>Documentacion API Postman:</p>
 https://web.postman.co/workspace/My-Workspace~79c74c25-f349-4e7d-84ae-46b28c67fa2b/documentation/26172216-2e9bae69-d534-44d7-85e9-0a573e1471ea
+
+<h2>Configuración de la base de datos</h2>
+
+<p>La aplicación utiliza una base de datos MySQL. Para configurar la conexión a la base de datos, es necesario modificar el archivo <code>application.properties</code> ubicado en la ruta <code>src/main/resources</code>.</p>
+
+<p>Los parámetros que se deben modificar son:</p>
+
+<pre>
+spring.datasource.url=jdbc:mysql://localhost:3306/nombre_base_datos
+spring.datasource.username=nombre_usuario
+spring.datasource.password=contraseña
+</pre>
+
+<p>Reemplace <code>nombre_base_datos</code>, <code>nombre_usuario</code> y <code>contraseña</code> con los valores correspondientes.</p>
+
+<p>Es necesario tener instalado un servidor de base de datos MySQL, como XAMPP. A continuación se detallan los pasos para instalar y configurar XAMPP:</p>
+
+<ol>
+  <li>Descargar XAMPP desde la página oficial: <a href="https://www.apachefriends.org/es/download.html">https://www.apachefriends.org/es/download.html</a></li>
+  <li>Ejecutar el archivo de instalación y seguir las instrucciones del asistente de instalación.</li>
+  <li>Una vez instalado, abrir XAMPP y asegurarse de que los módulos Apache y MySQL estén activados.</li>
+  <li>En el navegador web, abrir la página <code>http://localhost/phpmyadmin/</code> para acceder a la interfaz web de administración de la base de datos.</li>
+  <li>Crear una nueva base de datos con el nombre deseado y configurar los permisos de usuario necesarios.</li>
+  <li>Actualizar el archivo <code>application.properties</code> con los valores correspondientes de la base de datos creada.</li>
+</ol>
+
+<p>Una vez realizados estos pasos, la aplicación debería estar lista para funcionar con la nueva base de datos configurada.</p>
