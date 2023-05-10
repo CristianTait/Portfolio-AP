@@ -5,9 +5,9 @@
       <div class="card mt-3">
         <div class="card-body">
           <h5 class="card-title">{{ edu.cursoEdu }}</h5>
-          <p class="card-text">{{ edu.fechaEdu }}</p>
-          <p class="card-text">{{ edu.instiEdu }}</p>
-          <p class="card-text">{{ edu.descrpEdu }}</p>
+          <p class="card-text">Fecha Finalizacion: {{ edu.fechaEdu }}</p>
+          <p class="card-text">Institucion: <br> {{ edu.instiEdu }}</p>
+          <p class="card-text">Datos complementarios: <br>{{ edu.descrpEdu }}</p>
         </div>
       </div>
       <div *ngIf="estaLogueado()" class="button-group">
