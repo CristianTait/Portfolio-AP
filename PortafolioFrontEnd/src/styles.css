@@ -1,0 +1,60 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+body {
+    max-width: 100vw !important;
+    overflow-x: hidden;
+  }
+
+  /* Estilo para Webkit */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #333;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(#5f00a3, #fc7a00);
+    border-radius: 0px;
+  }
+  
+  .grayscale {
+    filter: grayscale(100%);
+  }
+  
+  .section-1 {
+    background-color: red;
+  }
+  
+  .section-2 {
+    background-color: orange;
+  }
+  
+  .section-3 {
+    background-color: yellow;
+  }
+  
+  .section-4 {
+    background-color: green;
+  }
+  
+  .section-5 {
+    background-color: blue;
+  }
+  
+  .section-6 {
+    background-color: indigo;
+  }
+  
+  .section-7 {
+    background-color: violet;
+  }
+  
+  .section-1-color {
+    background-color: lightpink;
+  }
+  
+  .section-7-color {
+    background-color: lavenderblush;
+  }
