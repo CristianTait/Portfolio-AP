@@ -1,3 +1,6 @@
+<p align="center">
+  <img width="150" src="https://cristiantait.com/imgAP/logo.png" alt="Portafolio Backend proyecto final Argentina Programa">
+</p>
 <h1>Documentación del Proyecto Portafolio Front End</h1>
 <p>El proyecto de Angular del Portafolio está diseñado para mostrar las habilidades y proyectos de un desarrollador. En este documento se describen los pasos necesarios para instalar las dependencias de Angular y montar el proyecto en un servidor local.</p>
 
