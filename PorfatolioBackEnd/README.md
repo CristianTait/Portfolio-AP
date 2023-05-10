@@ -9,13 +9,13 @@
 <h2>Estructura del proyecto</h2>
 <p>El proyecto está estructurado en diferentes paquetes de Java que contienen las diferentes capas de la aplicación. Los paquetes son los siguientes:</p>
 <ul>
-  <li>com.portfolioap.backend: contiene la clase principal que inicia la aplicación</li>
-  <li>com.portfolioap.backend.controller: contiene las clases controladoras de la aplicación que se encargan de recibir las peticiones y enviar las respuestas al cliente</li>
-  <li>com.portfolioap.backend.exception: contiene las clases que definen las excepciones personalizadas de la aplicación</li>
-  <li>com.portfolioap.backend.model: contiene las clases que definen los modelos de datos utilizados en la aplicación</li>
-  <li>com.portfolioap.backend.repository: contiene las clases que definen los repositorios utilizados para interactuar con la base de datos</li>
-  <li>com.portfolioap.backend.service: contiene las clases que definen los servicios utilizados para realizar la lógica de negocio de la aplicación</li>
-  <li>com.portfolioap.backend.util: contiene las clases que definen utilidades utilizadas en la aplicación</li>
+  <li>com.portfolio.backend: contiene la clase principal que inicia la aplicación</li>
+  <li>com.portfolio.backend.controller: contiene las clases controladoras de la aplicación que se encargan de recibir las peticiones y enviar las respuestas al cliente</li>
+  <li>com.portfolio.backend.exception: contiene las clases que definen las excepciones personalizadas de la aplicación</li>
+  <li>com.portfolio.backend.model: contiene las clases que definen los modelos de datos utilizados en la aplicación</li>
+  <li>com.portfolio.backend.repository: contiene las clases que definen los repositorios utilizados para interactuar con la base de datos</li>
+  <li>com.portfolio.backend.service: contiene las clases que definen los servicios utilizados para realizar la lógica de negocio de la aplicación</li>
+  <li>com.portfolio.backend.util: contiene las clases que definen utilidades utilizadas en la aplicación</li>
 </ul>
 <h2>Clonación del repositorio</h2>
 <p>Para clonar el repositorio de GitHub del proyecto de backend en Apache NetBeans con Spring Boot, siga estos pasos:</p>
