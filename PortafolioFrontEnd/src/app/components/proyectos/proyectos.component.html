@@ -4,7 +4,7 @@
     <div *ngFor="let proyecto of proyectos" class="col-12 col-lg-4">
       <div class="card mt-4 mt-lg-0">
         <div class="card-body">
-          <img src="https://ejemplo.com/imagen2.jpg" class="card-img-top" alt="Imagen del proyecto">
+          <img src="{{proyecto.imagenProy}}" class="card-img-top" alt="Imagen del proyecto">
           <h2 class="card-title">{{proyecto.tituloProy}}</h2>
           <p class="card-text">{{proyecto.descripProy}}</p>
           <ul class="list-unstyled">
