@@ -5,13 +5,13 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAKDMlznkO6dPu1yYO2ANjoRNrRohIoTOg",
-  authDomain: "yoprogramoprogramo.firebaseapp.com",
-  databaseURL: "https://yoprogramoprogramo-default-rtdb.firebaseio.com",
-  projectId: "yoprogramoprogramo",
-  storageBucket: "yoprogramoprogramo.appspot.com",
-  messagingSenderId: "254368116986",
-  appId: "1:254368116986:web:0ed0ed80ba7c8e9dc15943"
+  apiKey: "crendialapike",
+    authDomain: "yoprogramoprogramo.firebaseapp.com",
+    databaseURL: "https://yoprogramoprogramo-default-rtdb.firebaseio.com",
+    projectId: "yoprogramoprogramo",
+    storageBucket: "yoprogramoprogramo.appspot.com",
+    messagingSenderId: "idMessaging",
+    appId: "idApp"
 };
 
 // Initialize Firebase
