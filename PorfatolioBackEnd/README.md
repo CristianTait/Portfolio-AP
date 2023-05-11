@@ -2,11 +2,24 @@
   <img width="150" src="https://cristiantait.com/imgAP/logo.png" alt="Portafolio Backend proyecto final Argentina Programa">
 </p>
 
-<p>El Jar del Proyecto esta subido en https://cristiantait.com/MVN/APCDT.jar y configurado dentro del Dockerfile para Render.</p>
+
 
 <h1>Documentación del proyecto de backend en Apache NetBeans con Spring Boot</h1>
+
+<h1>Índice</h1>
+<ul>
+  <li><a href="#jar-proyecto">Descarga del JAR del Proyecto</a></li>
+  <li><a href="#estructura-proyecto">Estructura del Proyecto</a></li>
+  <li><a href="#clonacion-repositorio">Clonación del Repositorio</a></li>
+  <li><a href="#configuracion-netbeans">Configuración en Apache NetBeans</a></li>
+  <li><a href="#endpoints-api">URL y JSON de los Endpoints de la API REST</a></li>
+  <li><a href="#configuracion-bd">Configuración de la Base de Datos</a></li>
+</ul>
+
+<h2 id="jar-proyecto">Descarga del JAR del Proyecto</h2>
+<p>El Jar del Proyecto esta subido en https://cristiantait.com/MVN/APCDT.jar y configurado dentro del Dockerfile para Render.</p>
 <p>Este proyecto de backend fue desarrollado en Apache NetBeans utilizando el framework Spring Boot de Java. A continuación se describen algunos detalles importantes del proyecto:</p>
-<h2>Estructura del proyecto</h2>
+<h2 id="estructura-proyecto">Estructura del Proyecto</h2>
 <p>El proyecto está estructurado en diferentes paquetes de Java que contienen las diferentes capas de la aplicación. Los paquetes son los siguientes:</p>
 <ul>
   <li>com.portfolio.backend: contiene la clase principal que inicia la aplicación</li>
@@ -17,7 +30,7 @@
   <li>com.portfolio.backend.service: contiene las clases que definen los servicios utilizados para realizar la lógica de negocio de la aplicación</li>
   <li>com.portfolio.backend.util: contiene las clases que definen utilidades utilizadas en la aplicación</li>
 </ul>
-<h2>Clonación del repositorio</h2>
+<h2 id="clonacion-repositorio">Clonación del Repositorio</h2>
 <p>Para clonar el repositorio de GitHub del proyecto de backend en Apache NetBeans con Spring Boot, siga estos pasos:</p>
 <ol>
   <li>Abra la línea de comandos en su computadora</li>
@@ -25,7 +38,7 @@
   <li>Ejecute el siguiente comando: <code>git clone https://github.com/CristianTait/Portfolio-AP.git</code></li>
   <li>Ingrese a la carpeta PorfatolioBackEnd</li>
 </ol>
-<h2>Configuración en Apache NetBeans</h2>
+<h2 id="configuracion-netbeans">Configuración en Apache NetBeans</h2>
 <p>Para poder utilizar el proyecto de backend en Apache NetBeans, siga estos pasos:</p>
 <ol>
   <li>Abra Apache NetBeans</li>
@@ -39,7 +52,7 @@
   <li>Guarde los cambios</li>
 </ol>
 
-<h1>URL y JSON de los endpoints de la API REST</h1>
+<h2 id="endpoints-api">URL y JSON de los Endpoints de la API REST</h2>
 <p>Para probar los endpoints de la API REST del proyecto de Spring Boot, se puede utilizar la herramienta Postman.
 Postman es una herramienta de pruebas de API REST que permite enviar solicitudes HTTP a un servidor web y analizar la respuesta.
 Para comenzar a utilizar Postman, es necesario tener instalada la aplicación en su equipo. La misma puede descargarse de manera gratuita desde la página oficial de Postman: https://www.postman.com/downloads/.
@@ -48,7 +61,7 @@ Este archivo contiene todas las solicitudes de ejemplo para cada uno de los endp
 <p>Documentacion API Postman:</p>
 https://web.postman.co/workspace/My-Workspace~79c74c25-f349-4e7d-84ae-46b28c67fa2b/documentation/26172216-2e9bae69-d534-44d7-85e9-0a573e1471ea
 
-<h2>Configuración de la base de datos</h2>
+<h2 id="configuracion-bd">Configuración de la Base de Datos</h2>
 
 <p>La aplicación utiliza una base de datos MySQL. Para configurar la conexión a la base de datos, es necesario modificar el archivo <code>application.properties</code> ubicado en la ruta <code>src/main/resources</code>.</p>
 
