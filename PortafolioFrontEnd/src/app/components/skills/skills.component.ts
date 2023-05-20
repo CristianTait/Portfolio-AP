@@ -18,7 +18,7 @@ export class SkillsComponent {
   constructor(private http: HttpClient, private UsuarioService: UsuarioService, private router:Router) { }
 
   ngOnInit(): void {
-    this.http.get<any[]>('http://localhost:8080/habblandas/lista').subscribe(
+    this.http.get<any[]>('https://portafoliobackend-xekr.onrender.com/habblandas/lista').subscribe(
       (response) => {
         this.skills = response;
       },
@@ -27,7 +27,7 @@ export class SkillsComponent {
       }
     );
 
-    this.http.get<any[]>('http://localhost:8080/habduras/lista').subscribe(
+    this.http.get<any[]>('https://portafoliobackend-xekr.onrender.com/habduras/lista').subscribe(
       (response) => {
         this.skillsDuras = response;
       },
@@ -36,7 +36,7 @@ export class SkillsComponent {
       }
     );
 
-    this.http.get<any[]>('http://localhost:8080/idiomas/lista').subscribe(
+    this.http.get<any[]>('https://portafoliobackend-xekr.onrender.com/idiomas/lista').subscribe(
       (response) => {
         this.idiomas = response;
       },
@@ -46,9 +46,9 @@ export class SkillsComponent {
     );
 
   }
-  API_URL_HB = "http://localhost:8080/habblandas/";
-  API_URL_HD = "http://localhost:8080/habduras/";
-  API_URL_IDIOMAS = "http://localhost:8080/idiomas/";
+  API_URL_HB = "https://portafoliobackend-xekr.onrender.com/habblandas/";
+  API_URL_HD = "https://portafoliobackend-xekr.onrender.com/habduras/";
+  API_URL_IDIOMAS = "https://portafoliobackend-xekr.onrender.com/idiomas/";
 
   estaLogueado(): boolean {
     return this.UsuarioService.estaLogueado();
@@ -147,5 +147,20 @@ export class SkillsComponent {
             console.log('Error al obtener la lista de Idiomas:', error);
           }
         );
+      }
+
+      crearIdioma() {
+        // Redirigir al usuario a la página de edición del Idioma
+        this.router.navigate(['/crearidioma']);
+      }
+
+      crearHabilidadDura() {
+        // Redirigir al usuario a la página de edición de habilidad
+        this.router.navigate(['/crearhabilidaddura']);
+      }
+
+      crearHabilidadBlanda() {
+        // Redirigir al usuario a la página de edición de habilidad
+        this.router.navigate(['/crearhabilidadblanda']);
       }
 }

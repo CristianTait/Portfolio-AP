@@ -1,5 +1,8 @@
 <div class="container-fluid">
   <h1 class="text-center">Proyectos</h1>
+  <div *ngIf="estaLogueado()" class="text-center">
+    <button (click)="crearProyecto()" class="btn btn-success me-3">Crear Proyecto <i class="far fa-edit"></i></button>
+  </div>
   <div class="row">
     <div *ngFor="let proyecto of proyectos" class="col-12 col-lg-4">
       <div class="card mt-4 mt-lg-0">

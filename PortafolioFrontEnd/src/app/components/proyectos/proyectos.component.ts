@@ -21,7 +21,7 @@ constructor(private http: HttpClient, private router: Router, private UsuarioSer
 
   ngOnInit(): void {
     // Obtener proyectos
-    this.http.get<any[]>('http://localhost:8080/proyectos/lista').subscribe(
+    this.http.get<any[]>('https://portafoliobackend-xekr.onrender.com/proyectos/lista').subscribe(
       (response) => {
         this.proyectos = response;
       },
@@ -31,7 +31,7 @@ constructor(private http: HttpClient, private router: Router, private UsuarioSer
     );
   }
 
-  API_URL = "http://localhost:8080/proyectos/";
+  API_URL = "https://portafoliobackend-xekr.onrender.com/proyectos/";
 
   editarProyecto(proyectoId: number) {
     // Redirigir al usuario a la página de edición del proyecto

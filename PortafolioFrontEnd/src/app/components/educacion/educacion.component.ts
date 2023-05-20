@@ -16,7 +16,7 @@ export class EducacionComponent {
   constructor(private router: Router, private http: HttpClient, private UsuarioService: UsuarioService) { }
 
   ngOnInit(): void {
-    this.http.get<any[]>('http://localhost:8080/educacion/lista').subscribe(
+    this.http.get<any[]>('https://portafoliobackend-xekr.onrender.com/educacion/lista').subscribe(
       (response) => {
         this.educacion = response;
       },
@@ -26,7 +26,7 @@ export class EducacionComponent {
     );
   }
 
-  API_URL = "http://localhost:8080/educacion/";
+  API_URL = "https://portafoliobackend-xekr.onrender.com/educacion/";
 
   editarEducacion(educacionId: number) {
     // Redirigir al usuario a la página de edición del proyecto
@@ -64,6 +64,11 @@ obtenerEducacion(): void {
 
   estaLogueado(): boolean {
     return this.UsuarioService.estaLogueado();
+  }
+
+  crearEducacion() {
+    // Redirigir al usuario a la página de edición del proyecto
+    this.router.navigate(['/creareducacion']);
   }
 
 }

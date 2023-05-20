@@ -1,6 +1,9 @@
 <div class="container-fluid">
 <div class="row">
     <h1 class="text-center">Educacion</h1>
+    <div *ngIf="estaLogueado()" class="text-center">
+      <button (click)="crearEducacion()" class="btn btn-success me-3">Crear Educacion <i class="far fa-edit"></i></button>
+    </div>
     <div *ngFor="let edu of educacion" class="col-12 col-md-6 col-lg-4 text-center">
       <div class="card mt-3">
         <div class="card-body">

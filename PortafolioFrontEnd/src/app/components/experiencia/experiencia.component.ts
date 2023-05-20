@@ -15,7 +15,7 @@ export class ExperienciaComponent {
   constructor(private router: Router, private http: HttpClient, private UsuarioService: UsuarioService) { }
 
   ngOnInit(): void {
-    this.http.get<any[]>('http://localhost:8080/explab/lista').subscribe(
+    this.http.get<any[]>('https://portafoliobackend-xekr.onrender.com/explab/lista').subscribe(
       (response) => {
         this.experiencias = response;
       },
@@ -25,7 +25,7 @@ export class ExperienciaComponent {
     );
   }
 
-  API_URL = "http://localhost:8080/explab/";
+  API_URL = "https://portafoliobackend-xekr.onrender.com/explab/";
 
   editarExperiencia(experienciaId: number) {
     // Redirigir al usuario a la página de edición del proyecto
@@ -58,6 +58,10 @@ obtenerExperiencia(): void {
       console.log('Error al obtener la lista de Experiencia:', error);
     }
   );
+}   
+
+crearExpLab(): void {
+  this.router.navigate(['/crearexplab']);
 }   
     
 

@@ -2,6 +2,9 @@
 <h1 class="text-center">Skills</h1>
 <div class="row">
     <h2 class="text-center">Habilidades Blandas</h2>
+    <div *ngIf="estaLogueado()" class="text-center">
+      <button (click)="crearHabilidadBlanda()" class="btn btn-success me-3">Crear Habilidad Blanda <i class="far fa-edit"></i></button>
+    </div>
     <div class="col-12">
       <div class="row">
         <div *ngFor="let skill of skills" class="col-12 col-md-6 col-lg-4 text-center mb-4">
@@ -43,6 +46,9 @@
 
 <div class="row">
     <h2 class="text-center">Habilidades Duras</h2>
+    <div *ngIf="estaLogueado()" class="text-center">
+      <button (click)="crearHabilidadDura()" class="btn btn-success me-3">Crear Habilidad Dura <i class="far fa-edit"></i></button>
+    </div>
     <div class="col-12">
       <div class="row">
         <div *ngFor="let skill of skillsDuras" class="col-12 col-md-6 col-lg-4 text-center mb-4">
@@ -87,6 +93,9 @@
 
 <div class="row" style="margin-bottom: 10vh;">
     <h2 class="text-center">Idiomas</h2>
+    <div *ngIf="estaLogueado()" class="text-center">
+      <button (click)="crearIdioma()" class="btn btn-success me-3">Crear Idioma <i class="far fa-edit"></i></button>
+    </div>
     <div *ngFor="let idioma of idiomas" class="col-12 col-md-6 col-lg-4 text-center">
       <div class="card mt-3">
         <div class="card-body">
