@@ -12,7 +12,11 @@ import { EditarhabilidadesdurasComponent } from './components/editarhabilidadesd
 import { EditareducacionComponent } from './components/editareducacion/editareducacion.component';
 import { EditarexperiencialaboralComponent } from './components/editarexperiencialaboral/editarexperiencialaboral.component';
 import { EditarpersonaComponent } from './components/editarpersona/editarpersona.component';
-
+import { CrearexplabComponent } from './components/crearexplab/crearexplab.component';
+import { CreareducacionComponent } from './components/creareducacion/creareducacion.component';
+import { CrearhabilidadblandaComponent } from './components/crearhabilidadblanda/crearhabilidadblanda.component';
+import { CrearhabilidadduraComponent } from './components/crearhabilidaddura/crearhabilidaddura.component';
+import { CrearidiomaComponent } from './components/crearidioma/crearidioma.component';
 
 
 const routes: Routes = [
@@ -26,8 +30,12 @@ const routes: Routes = [
   {path: 'editar-idioma/:id', component: EditarIdiomasComponent},
   {path: 'editareducacion/:id', component: EditareducacionComponent},
   {path: 'editarexperiencia/:id', component: EditarexperiencialaboralComponent},
-  {path: 'editarpersona/:id', component: EditarpersonaComponent}
-
+  {path: 'editarpersona/:id', component: EditarpersonaComponent},
+  {path: 'crearexplab', component: CrearexplabComponent },
+  {path: 'creareducacion', component: CreareducacionComponent },
+  {path: 'crearhabilidadblanda', component: CrearhabilidadblandaComponent},
+  {path: 'crearhabilidaddura', component: CrearhabilidadduraComponent},
+  {path: 'crearidioma', component: CrearidiomaComponent}
 ];
 
 @NgModule({
@@ -35,3 +43,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
