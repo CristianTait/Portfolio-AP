@@ -39,6 +39,11 @@ import { AngularFireStorage, AngularFireStorageReference } from '@angular/fire/c
 import { AngularFireAuth } from "@angular/fire/compat/auth";
 import firebaseConfig from './environments/firebase.config';
 import { initializeApp } from 'firebase/app';
+import { CrearexplabComponent } from './components/crearexplab/crearexplab.component';
+import { CreareducacionComponent } from './components/creareducacion/creareducacion.component';
+import { CrearhabilidadduraComponent } from './components/crearhabilidaddura/crearhabilidaddura.component';
+import { CrearhabilidadblandaComponent } from './components/crearhabilidadblanda/crearhabilidadblanda.component';
+import { CrearidiomaComponent } from './components/crearidioma/crearidioma.component';
 
 
 
@@ -66,6 +71,11 @@ import { initializeApp } from 'firebase/app';
     EditareducacionComponent,
     EditarexperiencialaboralComponent,
     EditarpersonaComponent,
+    CrearexplabComponent,
+    CreareducacionComponent,
+    CrearhabilidadduraComponent,
+    CrearhabilidadblandaComponent,
+    CrearidiomaComponent,
     
   ],
   imports: [
