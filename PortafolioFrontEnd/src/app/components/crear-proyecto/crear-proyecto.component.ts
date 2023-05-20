@@ -9,13 +9,15 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CrearProyectoComponent {
 
+  proyecto = {tituloProy: '', descripProy: '', imagenProy: '', tecnoProy: '', fechaProy: '', urlProy: ''};
+
   constructor(private http: HttpClient, private router: Router) { 
     
   }
 
-  proyecto = {};
+  
 
-  API_URL = "http://localhost:8080/proyectos/";
+  API_URL = "https://portafoliobackend-xekr.onrender.com/proyectos/";
   
 
   cancelar() {
@@ -24,12 +26,22 @@ export class CrearProyectoComponent {
   }
 
   onSubmit() {
+
+    const urlRegex = new RegExp(
+      "^(?:(?:https?|ftp)://)"
+    );
+    if (!urlRegex.test(this.proyecto.urlProy) || !urlRegex.test(this.proyecto.imagenProy)) {
+      console.log('La URL ingresada no es válida');
+      alert("URL INVALIDA");
+      return;
+    }
+    
     // Enviar una solicitud POST al servidor para crear el proyecto
     this.http.post<any>(`${this.API_URL}create`, this.proyecto).subscribe(
       () => {
         console.log('Proyecto creado exitosamente');
         // Redirigir al usuario a la lista de proyectos
-        this.router.navigate(['/proyectos']);
+        this.router.navigate(['/']);
       },
       (error) => {
         console.log('Error al crear el proyecto:', error);
