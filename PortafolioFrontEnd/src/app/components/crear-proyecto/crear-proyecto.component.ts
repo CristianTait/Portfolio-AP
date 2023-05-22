@@ -17,7 +17,7 @@ export class CrearProyectoComponent {
 
   
 
-  API_URL = "https://portafoliobackend-xekr.onrender.com/proyectos/";
+  API_URL = "http://localhost:8080/proyectos/";
   
 
   cancelar() {
