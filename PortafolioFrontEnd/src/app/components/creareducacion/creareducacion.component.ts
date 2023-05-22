@@ -21,7 +21,7 @@ export class CreareducacionComponent {
   onSubmit() {
     // Enviar una solicitud PUT con los nuevos valores
     const educacionId = +this.route.snapshot.params['id'];
-    this.http.post<any>(`https://portafoliobackend-xekr.onrender.com/educacion/create`, this.educacion).subscribe(
+    this.http.post<any>(`http://localhost:8080/educacion/create`, this.educacion).subscribe(
       () => {
         console.log('Educacion creada exitosamente');
         // Redirigir al usuario de vuelta a la lista de proyectos
