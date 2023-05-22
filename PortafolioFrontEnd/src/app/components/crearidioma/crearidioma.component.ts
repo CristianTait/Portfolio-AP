@@ -22,7 +22,7 @@ export class CrearidiomaComponent {
   onSubmit() {
     // Enviar una solicitud PUT con los nuevos valores
     const idiomaId = +this.route.snapshot.params['id'];
-    this.http.post<any>(`https://portafoliobackend-xekr.onrender.com/idiomas/create`, this.idiomas).subscribe(
+    this.http.post<any>(`http://localhost:8080/idiomas/create`, this.idiomas).subscribe(
       () => {
         console.log('Idioma creado exitosamente');
         // Redirigir al usuario de vuelta a la lista de proyectos
