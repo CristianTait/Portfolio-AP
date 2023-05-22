@@ -21,7 +21,7 @@ export class CrearhabilidadduraComponent {
   onSubmit() {
     // Enviar una solicitud PUT con los nuevos valores
     const HDId = +this.route.snapshot.params['id'];
-    this.http.post<any>(`https://portafoliobackend-xekr.onrender.com/habduras/create`, this.skillsDuras).subscribe(
+    this.http.post<any>(`http://localhost:8080/habduras/create`, this.skillsDuras).subscribe(
       () => {
         console.log('Habilidad editada exitosamente');
         // Redirigir al usuario de vuelta a la lista de proyectos
