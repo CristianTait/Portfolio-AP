@@ -6,10 +6,10 @@ import { initializeApp } from "firebase/app";
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "crendialapike",
-    authDomain: "yoprogramoprogramo.firebaseapp.com",
-    databaseURL: "https://yoprogramoprogramo-default-rtdb.firebaseio.com",
-    projectId: "yoprogramoprogramo",
-    storageBucket: "yoprogramoprogramo.appspot.com",
+    authDomain: "URL",
+    databaseURL: "URL",
+    projectId: "URL",
+    storageBucket: "URL",
     messagingSenderId: "idMessaging",
     appId: "idApp"
 };
